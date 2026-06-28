@@ -369,7 +369,7 @@
           class="text-on-surface hover:text-primary font-headline-md transition-colors"
           href="#menu"
           onclick="toggleMobileMenu()"
-          >Menu</a
+          >Меню</a
         >
         <a
           class="text-on-surface hover:text-primary font-headline-md transition-colors"
@@ -423,8 +423,8 @@
               <span class="gradient-text">Дело вкуса Дербент.</span>
             </h2>
             <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-              Высокая кухня у вас дома. Наслаждайтесь изысканной пиццей, роллами и чуду от лучших шеф-поваров с нашей
-              премиальной доставкой в Дербенте.
+              Высокая кухня у вас дома. Наслаждайтесь изысканными роллами, пирогами и другими шедеврами от лучших
+              поваров с нашей премиальной доставкой в Дербенте.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
               <button
@@ -451,7 +451,6 @@
               <div
                 class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-2xl"
               ></div>
-              <!-- Добавлен семантический тег img вместо пустого div для индексации картинок в Яндекс.Картинках -->
               <img
                 src="https://lh3.googleusercontent.com/aida/AP1WRLvzDDbEVVz1JtlJhGc7DpsaqzN_r9EtPbrQ3z5ybnJcv4Cen0aqWpDEAm1A5dRBvbtgTi5Kw17iY0TRTFYp8WsFtp9ndTtaBRSmowQIO7O41so8OIbD33bNApNort_FAHXIx8QX1_VLSgB2BL653MqSq_Lb9Lm9wiUg7eCzwl3VUJ4MiBcf9EU6FlUpR_4b4JTZQ0tnc_AvTWQ2o4UJld5QChy8rZUib-NY37lBGG455WK4J8pcUpBDXQ"
                 alt="Доставка премиальной пиццы и роллов Дело Вкуса в Дербенте"
@@ -589,129 +588,385 @@
           <div class="text-center mb-12 reveal">
             <h2 class="font-headline-lg text-headline-lg mb-4">Меню доставки «Дело вкуса»</h2>
             <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
-              Откройте для себя богатство вкусов: европейская, японская и национальная кухня.
+              Актуальные цены и полный ассортимент нашей кухни.
             </p>
           </div>
-          <!-- Simple Grid Menu -->
+
+          <!-- Главная сетка меню -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="menu-grid">
-            <!-- Category: Пиццы -->
+            <!-- Салаты -->
             <div class="glass-card p-6 rounded-2xl reveal">
-              <h3 class="font-headline-md text-headline-md text-primary mb-4 border-b border-white/10 pb-2">
-                Пиццы в Дербенте
-              </h3>
-              <ul class="space-y-3 font-body-md text-body-md">
-                <li class="flex justify-between items-center">
-                  <span class="text-on-surface">Маргарита</span
-                  ><span class="text-on-surface-variant font-bold">500 ₽</span>
-                </li>
-                <li class="flex justify-between items-center">
-                  <span class="text-on-surface">Пепперони</span
-                  ><span class="text-on-surface-variant font-bold">600 ₽</span>
-                </li>
-                <li class="flex justify-between items-center">
-                  <span class="text-on-surface">4 Сыра</span
-                  ><span class="text-on-surface-variant font-bold">750 ₽</span>
-                </li>
-              </ul>
-            </div>
-            <!-- Category: Роллы -->
-            <div class="glass-card p-6 rounded-2xl reveal" style="transition-delay: 100ms">
-              <h3 class="font-headline-md text-headline-md text-primary mb-4 border-b border-white/10 pb-2">
-                Горячие роллы и суши
-              </h3>
-              <ul class="space-y-3 font-body-md text-body-md">
-                <li class="flex justify-between items-center">
-                  <span class="text-on-surface">Темпура с угрем</span
-                  ><span class="text-on-surface-variant font-bold">650 ₽</span>
-                </li>
-                <li class="flex justify-between items-center">
-                  <span class="text-on-surface">Запеченный лосось</span
-                  ><span class="text-on-surface-variant font-bold">550 ₽</span>
-                </li>
-                <li class="flex justify-between items-center">
-                  <span class="text-on-surface">Вулкан</span
-                  ><span class="text-on-surface-variant font-bold">700 ₽</span>
-                </li>
-              </ul>
-            </div>
-            <!-- Category: Чуду -->
-            <div class="glass-card p-6 rounded-2xl reveal" style="transition-delay: 200ms">
-              <h3 class="font-headline-md text-headline-md text-primary mb-4 border-b border-white/10 pb-2">
-                Традиционное Чуду
-              </h3>
-              <ul class="space-y-3 font-body-md text-body-md">
-                <li class="flex justify-between items-center">
-                  <span class="text-on-surface">С мясом</span
-                  ><span class="text-on-surface-variant font-bold">400 ₽</span>
-                </li>
-                <li class="flex justify-between items-center">
-                  <span class="text-on-surface">С творогом</span
-                  ><span class="text-on-surface-variant font-bold">350 ₽</span>
-                </li>
-                <li class="flex justify-between items-center">
-                  <span class="text-on-surface">С тыквой</span
-                  ><span class="text-on-surface-variant font-bold">300 ₽</span>
-                </li>
-              </ul>
-            </div>
-            <!-- Hidden Menu Items -->
-            <div class="glass-card p-6 rounded-2xl hidden" id="extra-menu-1">
               <h3 class="font-headline-md text-headline-md text-primary mb-4 border-b border-white/10 pb-2">Салаты</h3>
               <ul class="space-y-3 font-body-md text-body-md">
                 <li class="flex justify-between items-center">
-                  <span class="text-on-surface">Цезарь с курицей</span
-                  ><span class="text-on-surface-variant font-bold">450 ₽</span>
+                  <span class="text-on-surface">Салат по-домашнему</span>
+                  <span class="text-on-surface-variant font-bold">300 ₽</span>
                 </li>
                 <li class="flex justify-between items-center">
-                  <span class="text-on-surface">Греческий</span
-                  ><span class="text-on-surface-variant font-bold">400 ₽</span>
+                  <span class="text-on-surface">Салат цезарь с курицей</span>
+                  <span class="text-on-surface-variant font-bold">350 ₽</span>
                 </li>
                 <li class="flex justify-between items-center">
-                  <span class="text-on-surface">Теплый с телятиной</span
-                  ><span class="text-on-surface-variant font-bold">550 ₽</span>
+                  <span class="text-on-surface">Салат цезарь с креветками</span>
+                  <span class="text-on-surface-variant font-bold">400 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Салат цезарь с лососем</span>
+                  <span class="text-on-surface-variant font-bold">400 ₽</span>
                 </li>
               </ul>
             </div>
+
+            <!-- Горячие роллы -->
+            <div class="glass-card p-6 rounded-2xl reveal" style="transition-delay: 100ms">
+              <h3 class="font-headline-md text-headline-md text-primary mb-4 border-b border-white/10 pb-2">
+                Горячие роллы
+              </h3>
+              <ul class="space-y-3 font-body-md text-body-md">
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Цезарь с курицей</span>
+                  <span class="text-on-surface-variant font-bold">340 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Цезарь с креветками</span>
+                  <span class="text-on-surface-variant font-bold">380 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Цезарь с лососем</span>
+                  <span class="text-on-surface-variant font-bold">420 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Пицца ролл курица</span>
+                  <span class="text-on-surface-variant font-bold">440 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Пицца ролл креветка</span>
+                  <span class="text-on-surface-variant font-bold">470 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Горячий шик / Япоша</span>
+                  <span class="text-on-surface-variant font-bold">410 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Темпура (краб/крев/лос/кур)</span>
+                  <span class="text-on-surface-variant font-bold">410 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Эби спайси Темпура</span>
+                  <span class="text-on-surface-variant font-bold">420 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Жаренный смак</span>
+                  <span class="text-on-surface-variant font-bold">410 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Бургер ролл</span>
+                  <span class="text-on-surface-variant font-bold">470 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Жульен ролл</span>
+                  <span class="text-on-surface-variant font-bold">440 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Темпура Магура</span>
+                  <span class="text-on-surface-variant font-bold">490 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Темпура Филадельфия</span>
+                  <span class="text-on-surface-variant font-bold">550 ₽</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Холодные роллы -->
+            <div class="glass-card p-6 rounded-2xl reveal" style="transition-delay: 200ms">
+              <h3 class="font-headline-md text-headline-md text-primary mb-4 border-b border-white/10 pb-2">
+                Холодные роллы
+              </h3>
+              <ul class="space-y-3 font-body-md text-body-md">
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Креветка из Малайзии</span>
+                  <span class="text-on-surface-variant font-bold">600 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Филадельфия</span>
+                  <span class="text-on-surface-variant font-bold">440 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Филадельфия Дуэт</span>
+                  <span class="text-on-surface-variant font-bold">750 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Филадельфия Люкс</span>
+                  <span class="text-on-surface-variant font-bold">550 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Филадельфия Краб / Крев.</span>
+                  <span class="text-on-surface-variant font-bold">450 / 460 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Филадельфия Тунец</span>
+                  <span class="text-on-surface-variant font-bold">480 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Калифорния (Краб/крев/лос)</span>
+                  <span class="text-on-surface-variant font-bold">420 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Мини (Краб/крев/огурец/лос)</span>
+                  <span class="text-on-surface-variant font-bold">340 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Морской коктейль</span>
+                  <span class="text-on-surface-variant font-bold">650 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Дело Вкуса / Лас Вегас</span>
+                  <span class="text-on-surface-variant font-bold">440 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Морской бриз</span>
+                  <span class="text-on-surface-variant font-bold">550 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">4 сыра</span>
+                  <span class="text-on-surface-variant font-bold">490 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Эби спайси / Аляска</span>
+                  <span class="text-on-surface-variant font-bold">420 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Бешенный лосось</span>
+                  <span class="text-on-surface-variant font-bold">440 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Ойси краб / креветка</span>
+                  <span class="text-on-surface-variant font-bold">390 / 440 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Самурай / Спайси Чикен</span>
+                  <span class="text-on-surface-variant font-bold">420 / 410 ₽</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Скрытые элементы меню (раскрываются по кнопке) -->
+
+            <!-- Запеченные роллы -->
+            <div class="glass-card p-6 rounded-2xl hidden" id="extra-menu-1">
+              <h3 class="font-headline-md text-headline-md text-primary mb-4 border-b border-white/10 pb-2">
+                Запеченные роллы
+              </h3>
+              <ul class="space-y-3 font-body-md text-body-md">
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Дело Вкуса</span>
+                  <span class="text-on-surface-variant font-bold">490 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Ролл Чеддер / Филадельфия</span>
+                  <span class="text-on-surface-variant font-bold">440 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Морской бриз</span>
+                  <span class="text-on-surface-variant font-bold">550 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Калифорния (лосось/кур/крев/краб)</span>
+                  <span class="text-on-surface-variant font-bold">440 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Калифорния Авокадо Краб</span>
+                  <span class="text-on-surface-variant font-bold">450 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Спайси (краб/курица/крев/лосось)</span>
+                  <span class="text-on-surface-variant font-bold">440 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Цезарь с курицей</span>
+                  <span class="text-on-surface-variant font-bold">390 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Цезарь с креветками</span>
+                  <span class="text-on-surface-variant font-bold">410 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Креветка Чили / Лосось в сыре</span>
+                  <span class="text-on-surface-variant font-bold">420 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Ролл (курица/лосось/краб/крев)</span>
+                  <span class="text-on-surface-variant font-bold">440 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Ролл Ассорти</span>
+                  <span class="text-on-surface-variant font-bold">550 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Запеченный ролл Блэк</span>
+                  <span class="text-on-surface-variant font-bold">440 ₽</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Наборы / Сеты -->
             <div class="glass-card p-6 rounded-2xl hidden" id="extra-menu-2">
-              <h3 class="font-headline-md text-headline-md text-primary mb-4 border-b border-white/10 pb-2">Десерты</h3>
-              <ul class="space-y-3 font-body-md text-body-md">
-                <li class="flex justify-between items-center">
-                  <span class="text-on-surface">Чизкейк Нью-Йорк</span
-                  ><span class="text-on-surface-variant font-bold">300 ₽</span>
+              <h3 class="font-headline-md text-headline-md text-primary mb-4 border-b border-white/10 pb-2">
+                Наборы (Сеты)
+              </h3>
+              <ul class="space-y-4 font-body-md text-body-md">
+                <li>
+                  <div class="flex justify-between items-center mb-1">
+                    <span class="text-on-surface font-semibold">Сет 1</span>
+                    <span class="text-on-surface-variant font-bold">1600 ₽</span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant">
+                    Филадельфия, Цезарь с курицей, Запеченный краб, Ойси креветка
+                  </p>
                 </li>
-                <li class="flex justify-between items-center">
-                  <span class="text-on-surface">Тирамису</span
-                  ><span class="text-on-surface-variant font-bold">350 ₽</span>
+                <li>
+                  <div class="flex justify-between items-center mb-1">
+                    <span class="text-on-surface font-semibold">Сет 2</span>
+                    <span class="text-on-surface-variant font-bold">1850 ₽</span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant">
+                    Калифорния креветка, Запеченный с курицей, Запеченный с крабом, Цезарь с курицей, Ойси краб
+                  </p>
                 </li>
-                <li class="flex justify-between items-center">
-                  <span class="text-on-surface">Фондан</span
-                  ><span class="text-on-surface-variant font-bold">320 ₽</span>
+                <li>
+                  <div class="flex justify-between items-center mb-1">
+                    <span class="text-on-surface font-semibold">Сет 3</span>
+                    <span class="text-on-surface-variant font-bold">2800 ₽</span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant">
+                    Темпура креветка, Цезарь с курицей, Запеченный с лососем, Запеченный с крабом, Филадельфия, Ойси
+                    краб, Мини огурец, Мини лосось
+                  </p>
+                </li>
+                <li>
+                  <div class="flex justify-between items-center mb-1">
+                    <span class="text-on-surface font-semibold">Сет 4</span>
+                    <span class="text-on-surface-variant font-bold">3050 ₽</span>
+                  </div>
+                  <p class="text-xs text-on-surface-variant">
+                    Темпура краб, Запеченная Калифорния лосось, Калифорния креветка, Запеченный с курицей, Запеченная
+                    Филадельфия, Дело Вкуса, Цезарь с курицей, Ойси креветка
+                  </p>
                 </li>
               </ul>
             </div>
+
+            <!-- Пироги и Выпечка -->
             <div class="glass-card p-6 rounded-2xl hidden" id="extra-menu-3">
-              <h3 class="font-headline-md text-headline-md text-primary mb-4 border-b border-white/10 pb-2">Напитки</h3>
+              <h3 class="font-headline-md text-headline-md text-primary mb-4 border-b border-white/10 pb-2">
+                Выпечка и Пироги
+              </h3>
               <ul class="space-y-3 font-body-md text-body-md">
                 <li class="flex justify-between items-center">
-                  <span class="text-on-surface">Лимонад маракуйя</span
-                  ><span class="text-on-surface-variant font-bold">250 ₽</span>
+                  <span class="text-on-surface">Хачапури по-аджарски</span>
+                  <span class="text-on-surface-variant font-bold">300 ₽</span>
                 </li>
                 <li class="flex justify-between items-center">
-                  <span class="text-on-surface">Свежевыжатый сок</span
-                  ><span class="text-on-surface-variant font-bold">200 ₽</span>
+                  <span class="text-on-surface">Хачапури по-аджарски Люкс</span>
+                  <span class="text-on-surface-variant font-bold">400 ₽</span>
                 </li>
                 <li class="flex justify-between items-center">
-                  <span class="text-on-surface">Морс клюквенный</span
-                  ><span class="text-on-surface-variant font-bold">150 ₽</span>
+                  <span class="text-on-surface">Хачапури по-аджарски из к.м.</span>
+                  <span class="text-on-surface-variant font-bold">400 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Хачапури из к.м. Люкс</span>
+                  <span class="text-on-surface-variant font-bold">450 ₽</span>
+                </li>
+                <li class="flex justify-between items-center text-primary pt-2 border-t border-white/5">
+                  <span>Осетинские пироги:</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Курица, картошка, сыр</span>
+                  <span class="text-on-surface-variant font-bold">450 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Курица с сыром</span>
+                  <span class="text-on-surface-variant font-bold">450 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Мясо с сыром</span>
+                  <span class="text-on-surface-variant font-bold">600 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Картошка с сыром</span>
+                  <span class="text-on-surface-variant font-bold">400 ₽</span>
+                </li>
+                <li class="flex justify-between items-center pt-2 border-t border-white/5">
+                  <span class="text-on-surface">Курица гриль</span>
+                  <span class="text-on-surface-variant font-bold">850 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Хлеб Дело Вкуса</span>
+                  <span class="text-on-surface-variant font-bold">100 ₽</span>
                 </li>
               </ul>
             </div>
+
+            <!-- Соусы и Напитки -->
+            <div class="glass-card p-6 rounded-2xl hidden" id="extra-menu-4">
+              <h3 class="font-headline-md text-headline-md text-primary mb-4 border-b border-white/10 pb-2">Соусы</h3>
+              <ul class="grid grid-cols-2 gap-2 font-body-md text-body-md mb-4">
+                <li class="flex justify-between pr-2 border-r border-white/5">
+                  <span>Спайси</span><span class="font-bold text-primary">50 ₽</span>
+                </li>
+                <li class="flex justify-between pl-2">
+                  <span>Ореховый</span><span class="font-bold text-primary">50 ₽</span>
+                </li>
+                <li class="flex justify-between pr-2 border-r border-white/5">
+                  <span>Кимчи</span><span class="font-bold text-primary">50 ₽</span>
+                </li>
+                <li class="flex justify-between pl-2">
+                  <span>Цезарь</span><span class="font-bold text-primary">50 ₽</span>
+                </li>
+                <li class="flex justify-between pr-2 border-r border-white/5">
+                  <span>Шашлычный</span><span class="font-bold text-primary">50 ₽</span>
+                </li>
+                <li class="flex justify-between pl-2">
+                  <span>Соевый</span><span class="font-bold text-primary">50 ₽</span>
+                </li>
+                <li class="flex justify-between pr-2 border-r border-white/5">
+                  <span>Кетчуп</span><span class="font-bold text-primary">30 ₽</span>
+                </li>
+                <li class="flex justify-between pl-2">
+                  <span>Сырный</span><span class="font-bold text-primary">30 ₽</span>
+                </li>
+              </ul>
+
+              <h3 class="font-headline-md text-headline-md text-primary mb-4 border-b border-white/10 pb-2">Напитки</h3>
+              <ul class="space-y-2 font-body-md text-body-md">
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Газированные соки Добрый</span>
+                  <span class="text-on-surface-variant font-bold">150 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Натуральные соки Добрый</span>
+                  <span class="text-on-surface-variant font-bold">170 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Горилла</span>
+                  <span class="text-on-surface-variant font-bold">150 ₽</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-on-surface">Айран 0,5 / Вода 0,5</span>
+                  <span class="text-on-surface-variant font-bold">100 ₽</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Кнопка развернуть -->
             <div
               class="glass-card p-6 rounded-2xl col-span-full mt-4 text-center border-none shadow-none bg-transparent"
               id="menu-toggle-container"
             >
               <p class="font-body-md text-body-md text-on-surface-variant mb-4">
-                Полное меню доступно при оформлении заказа.
+                Нажмите ниже, чтобы увидеть полные категории роллов, сетов, выпечки и напитков.
               </p>
               <button
                 class="gradient-btn px-6 py-2 rounded-full font-label-md text-label-md font-bold transition-all hover:scale-105 active:scale-95"
@@ -756,8 +1011,8 @@
                   >
                 </div>
                 <p class="font-body-md text-body-md text-on-surface-variant italic mb-6">
-                  "Невероятно вкусная пицца! Тесто идеальное, начинки много. Доставили на Гагарина горячей, как будто
-                  только из печи. Теперь заказываем только здесь."
+                  "Невероятно вкусная еда! Наборы роллов просто огромные и свежие. Доставили на Гагарина горячим, как
+                  будто только с кухни. Теперь заказываем только здесь."
                 </p>
               </div>
               <div class="flex items-center gap-4">
@@ -795,8 +1050,8 @@
                   >
                 </div>
                 <p class="font-body-md text-body-md text-on-surface-variant italic mb-6">
-                  "Роллы просто бомба! Свежайшая рыба, рис сварен правильно. Очень порадовала эко-упаковка. Доставка
-                  быстрая и курьер вежливый."
+                  "Роллы просто бомба! Свежайшая рыба, рис сварен правильно. Очень порадовала упаковка. Доставка быстрая
+                  и курьер вежливый."
                 </p>
               </div>
               <div class="flex items-center gap-4">
@@ -834,8 +1089,8 @@
                   >
                 </div>
                 <p class="font-body-md text-body-md text-on-surface-variant italic mb-6">
-                  "Чуду с мясом превзошли все ожидания. Очень сочные и сытные. Отличный сервис для тех, кто ценит
-                  качественную еду дома."
+                  "Хачапури по-аджарски превзошли все ожидания. Очень сочные, сыра невероятно много. Отличный сервис для
+                  тех, кто ценит качественную еду дома."
                 </p>
               </div>
               <div class="flex items-center gap-4">
@@ -1024,6 +1279,7 @@
           document.getElementById("extra-menu-1"),
           document.getElementById("extra-menu-2"),
           document.getElementById("extra-menu-3"),
+          document.getElementById("extra-menu-4"),
         ];
         const btn = document.getElementById("menu-toggle-btn");
 
